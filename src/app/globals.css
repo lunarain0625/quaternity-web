@@ -3,12 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #c1902c;
+  --brand-dark: #a0761f;
+  --surface: #f5f5f5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-geist-sans), "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
